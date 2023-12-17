@@ -61,6 +61,6 @@ def optimize(request):
 
             map_html_filename = f'map_day_{selected_day}.html'
             map_html_file = os.path.join(settings.STATIC_URL, map_html_filename)
-            plot_routes_on_map(transformed_routes[selected_day], DEPOT_COORDINATES, selected_day, weekly_length).save(os.path.join(settings.STATIC_ROOT+"/generated_maps", map_html_filename))
+            plot_routes_on_map(transformed_routes[selected_day], DEPOT_COORDINATES, selected_day, weekly_length).save(os.path.join(settings.STATIC_ROOT+"generated_maps", map_html_filename))
 
     return render(request, 'optimize.html', {'map_html_file': map_html_file, 'selected_day': selected_day})
