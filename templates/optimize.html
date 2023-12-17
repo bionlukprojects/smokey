@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+
+{% block body %}
+<style>
+    .input {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+    }
+    #form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 50px;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    .info {
+        width: 35%;
+        color: black;
+        font-size: 30px;
+        font-family: Kanit;
+        font-weight: 400;
+        word-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: #4A4646B5;
+        height: 90%;
+        padding: 1cm;
+        border-radius: 20px;
+    }
+    .file {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    #submit {
+        width: 10cm;
+        height: 50px;
+        border-radius: 20px;
+    }
+    label {
+        color: black;
+        font-size: 28px;
+        font-family: Kanit;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 80px;
+        word-wrap: break-word;
+        background-color: #d9d9d9;
+        width: 8cm;
+        border-radius: 20px;
+        padding-left: 30px;
+    }
+
+    .truckvalue {
+        display: flex;
+        gap: 20px;
+    }
+
+    .dayvalue {
+        display: flex;
+        gap: 20px;
+    }
+
+    #trucks {
+        font-size: 23px;
+    }
+
+    #day {
+        width: 5cm;
+        font-size: 23px;
+    }
+</style>
+<div class="input">
+    <form action="/optimize" method="post" enctype="multipart/form-data" id="form">
+        {% csrf_token %}
+        <div class="file">
+            <label>File Name: </label>
+            <input type="file" name="file">
+        </div>
+
+        <div class="truckvalue">
+            <label>Truck Number</label>
+            <input type="text" id="trucks" name="trucks" placeholder="Separate with commas">
+        </div>
+    
+        <!-- Day Selection Dropdown -->
+        <div class="dayvalue">
+            <label for="day">Select Day:</label>
+            <select name="day" id="day">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+                <option value="3">Thursday</option>
+                <option value="4">Friday</option>
+            </select>
+        </div>
+    
+        <input type="submit" value="Upload and Optimize" id="submit">
+    </form>
+    <div class="info">
+        <p>Data File Name = "Data_Last.xlsx"</p>
+        <div class="truckinfo">
+            <p>Truck number should be written for 5 days, seperated with comma.</p>
+            <p>Ex. 10,20,30,40,50</p>
+        </div>
+        <div class="days">
+            Days: Monday, Tuesday, Wednesday, Thursday, Friday
+        </div>
+    </div>
+</div>
+
+
+{% if map_html_file and selected_day is not none %}
+<style>
+    .input {
+        display: none;
+    }
+</style>
+<iframe src="{% static 'generated_maps/map_day_' %}{{ selected_day }}.html" width="100%" height="600"></iframe>
+{% endif %}
+
+{% endblock body %}

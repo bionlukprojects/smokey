@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09bf6a735c25dce92ee4556b4feacf13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09bf6a735c25dce92ee4556b4feacf13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09bf6a735c25dce92ee4556b4feacf13 = L.map(
+                "map_09bf6a735c25dce92ee4556b4feacf13",
+                {
+                    center: [41.08919085025256, 29.04999926199514],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d6ed41a63b0757ba8fb7cfc8152aeb1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7d6ed41a63b0757ba8fb7cfc8152aeb1.addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+            var poly_line_d8e47ad9b8bc8abc4605b37dde752592 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.09673996, 29.05310988], [41.077171, 29.043217], [41.09387, 29.02782], [41.107511012815, 29.014819655567], [41.119354248046, 29.003458023071], [41.111867, 28.997138], [41.094415755942, 28.997789053246], [41.090443362482, 28.999597700313], [41.087757, 29.004472], [41.090023, 29.005365], [41.08395, 28.999841], [41.080654, 28.999437], [41.1280328, 29.02942229], [41.129061, 29.044711], [41.137805, 29.053443], [41.25172, 28.9773], [41.17915998, 28.89096012], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_809cf1804edce7819c6bb21d334ed438 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0995b5e207150e82eee54866a4dda636 = $(`<div id="html_0995b5e207150e82eee54866a4dda636" style="width: 100.0%; height: 100.0%;">Truck ID: 1, Length: 64.32 km</div>`)[0];
+                popup_809cf1804edce7819c6bb21d334ed438.setContent(html_0995b5e207150e82eee54866a4dda636);
+            
+        
+
+        poly_line_d8e47ad9b8bc8abc4605b37dde752592.bindPopup(popup_809cf1804edce7819c6bb21d334ed438)
+        ;
+
+        
+    
+    
+            var poly_line_d3f496916f4280a3826d8ca97bae5606 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.09387, 29.02782], [41.107511012815, 29.014819655567], [41.096025123261, 29.005165714771], [41.118344, 28.997973], [41.127846, 29.038269], [41.130916, 29.041309], [41.13806534, 29.05261612], [41.170593261718, 29.054075241088], [41.171032306, 29.05668152], [41.05075073, 29.02487183], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_eb929000b660576719e534083ca44610 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6b9db34fdd856c8218fb5f17dee2f8c = $(`<div id="html_b6b9db34fdd856c8218fb5f17dee2f8c" style="width: 100.0%; height: 100.0%;">Truck ID: 2, Length: 35.31 km</div>`)[0];
+                popup_eb929000b660576719e534083ca44610.setContent(html_b6b9db34fdd856c8218fb5f17dee2f8c);
+            
+        
+
+        poly_line_d3f496916f4280a3826d8ca97bae5606.bindPopup(popup_eb929000b660576719e534083ca44610)
+        ;
+
+        
+    
+    
+            var poly_line_2b07a8b770af93db9833250df3237710 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.088388, 29.03247], [41.064797, 29.028166], [41.049434661865, 29.025022506713], [41.095992, 29.004803], [41.116146, 28.997426], [41.113452911377, 29.031352996826], [41.147574624047, 29.0367609635], [41.169246, 29.05553], [41.082744598388, 28.986656188964], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_f4e7b5f1ad0c28233b1593b0d6aa1824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6767d71f9a2c892d90740d623588f903 = $(`<div id="html_6767d71f9a2c892d90740d623588f903" style="width: 100.0%; height: 100.0%;">Truck ID: 3, Length: 39.75 km</div>`)[0];
+                popup_f4e7b5f1ad0c28233b1593b0d6aa1824.setContent(html_6767d71f9a2c892d90740d623588f903);
+            
+        
+
+        poly_line_2b07a8b770af93db9833250df3237710.bindPopup(popup_f4e7b5f1ad0c28233b1593b0d6aa1824)
+        ;
+
+        
+    
+    
+            var poly_line_d562fa4fa0e808b2bdd0e7130e690a3f = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.08493, 29.034837], [41.078573, 29.027232], [41.063967, 29.019023], [41.060007, 29.036382], [41.079774, 29.006932], [41.093677520752, 28.991634368896], [41.095304, 28.987134], [41.084842, 28.98587], [41.11611, 28.99747], [41.116079703, 29.021065971], [41.129886, 29.042241], [41.143032073974, 29.045148849487], [41.15148527, 29.04252101], [41.15958, 29.040015], [41.155626, 29.031582], [41.192573, 29.050352], [41.158405303955, 28.913291931152], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_dbd268f1427822d3b25bb30884fca26f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d6ab919c035e8b772e82b86f336912d = $(`<div id="html_2d6ab919c035e8b772e82b86f336912d" style="width: 100.0%; height: 100.0%;">Truck ID: 4, Length: 54.91 km</div>`)[0];
+                popup_dbd268f1427822d3b25bb30884fca26f.setContent(html_2d6ab919c035e8b772e82b86f336912d);
+            
+        
+
+        poly_line_d562fa4fa0e808b2bdd0e7130e690a3f.bindPopup(popup_dbd268f1427822d3b25bb30884fca26f)
+        ;
+
+        
+    
+    
+            var poly_line_74a173256a28d3da51338b1707be7bff = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.106166839599, 29.042810440063], [41.1143, 29.04], [41.138220842862, 29.053258239914], [41.18124996, 29.07357984], [41.179401397705, 28.992664337158], [41.116179, 28.998003], [41.097885131835, 29.003499984741], [41.093643, 29.004558], [41.083347320556, 29.014101028442], [41.076128, 29.016701], [41.078433990478, 29.005710601806], [41.078735, 29.003738], [41.088842, 28.984932], [41.077776, 29.027828], [41.079026, 29.031076], [41.17915998, 28.89096012], [41.17915998, 28.89096012], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_a45ca67c010509f310f5db1dcb1d4fe9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc73235a85a7fd541132f09816b0a2b = $(`<div id="html_0fc73235a85a7fd541132f09816b0a2b" style="width: 100.0%; height: 100.0%;">Truck ID: 5, Length: 69.49 km</div>`)[0];
+                popup_a45ca67c010509f310f5db1dcb1d4fe9.setContent(html_0fc73235a85a7fd541132f09816b0a2b);
+            
+        
+
+        poly_line_74a173256a28d3da51338b1707be7bff.bindPopup(popup_a45ca67c010509f310f5db1dcb1d4fe9)
+        ;
+
+        
+    
+    
+            var poly_line_c2d824f0f55fa0ba82e74e0ab4b0ed2f = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.086112976074, 29.047918319702], [41.085609436035, 29.046566009521], [41.09320399, 29.0388407], [41.079026, 29.031076], [41.07908018, 29.02765646], [41.089249, 29.022182], [41.08769, 29.014119], [41.079067230224, 29.009700775146], [41.11520004, 28.9987793], [41.116146, 28.997426], [41.121442, 28.99616], [41.11950302124, 29.001848220825], [41.114471435546, 29.034162521362], [41.160541, 29.042841], [41.172155, 29.055497], [41.196331024169, 29.029207229614], [41.246653, 29.036461], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_f3c57c28ead45aaf4c042925628906f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e8c7f6da0ca3159453f701035613189 = $(`<div id="html_3e8c7f6da0ca3159453f701035613189" style="width: 100.0%; height: 100.0%;">Truck ID: 6, Length: 48.17 km</div>`)[0];
+                popup_f3c57c28ead45aaf4c042925628906f2.setContent(html_3e8c7f6da0ca3159453f701035613189);
+            
+        
+
+        poly_line_c2d824f0f55fa0ba82e74e0ab4b0ed2f.bindPopup(popup_f3c57c28ead45aaf4c042925628906f2)
+        ;
+
+        
+    
+    
+            var poly_line_c8a3c7c880940a28b9f70570fbabebc6 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.067426, 29.043431], [41.067079, 29.042348], [41.068195343017, 29.025311787923], [41.051216139458, 29.024490276352], [41.078594207763, 29.009937286377], [41.078933, 29.003908], [41.082790374755, 29.000732421875], [41.089996607043, 28.995374897495], [41.099722506478, 28.991521149874], [41.120558, 29.002821], [41.08769, 29.014119], [41.127426, 29.038111], [41.208451937841, 29.022592197589], [41.220224602148, 29.032881818712], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_372e52b784bd2c669ee721faec0870d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_991da52667e6078a8e47e5dd567047f5 = $(`<div id="html_991da52667e6078a8e47e5dd567047f5" style="width: 100.0%; height: 100.0%;">Truck ID: 7, Length: 48.68 km</div>`)[0];
+                popup_372e52b784bd2c669ee721faec0870d1.setContent(html_991da52667e6078a8e47e5dd567047f5);
+            
+        
+
+        poly_line_c8a3c7c880940a28b9f70570fbabebc6.bindPopup(popup_372e52b784bd2c669ee721faec0870d1)
+        ;
+
+        
+    
+    
+            var poly_line_d9cabf8c5814828d016ea6aa83e72bae = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.108699798584, 29.023735046386], [41.097245, 29.0037], [41.093643, 29.004558], [41.085284, 28.998282], [41.080477992073, 29.011291628703], [41.0741096735, 29.016002509743], [41.098466, 28.983745], [41.122293, 29.070537], [41.196331024169, 29.029207229614], [41.18632316, 28.88588721], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_7f3978b4d5f62c883d2d64f27b528c82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31536f6434bfc8a86631154bf5e2e1eb = $(`<div id="html_31536f6434bfc8a86631154bf5e2e1eb" style="width: 100.0%; height: 100.0%;">Truck ID: 8, Length: 58.72 km</div>`)[0];
+                popup_7f3978b4d5f62c883d2d64f27b528c82.setContent(html_31536f6434bfc8a86631154bf5e2e1eb);
+            
+        
+
+        poly_line_d9cabf8c5814828d016ea6aa83e72bae.bindPopup(popup_7f3978b4d5f62c883d2d64f27b528c82)
+        ;
+
+        
+    
+    
+            var poly_line_7e559549abb7d0d6b7fbeed99296d3cd = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.084648, 29.035093], [41.069552, 29.041837], [41.079134, 29.005286], [41.08874, 29.002906], [41.093643, 29.004558], [41.098163604736, 29.004186630249], [41.090503692627, 28.99197769165], [41.12047, 28.997138], [41.120469, 29.00077], [41.122354, 29.005547], [41.115721, 29.023224], [41.109572104188, 29.020004682241], [41.175711614559, 28.993012726424], [41.174990865402, 29.063696209341], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_5e534637562bbe860c3cf9a0a1dacf79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76ee34005052acca2bc0a903ceb74b7b = $(`<div id="html_76ee34005052acca2bc0a903ceb74b7b" style="width: 100.0%; height: 100.0%;">Truck ID: 9, Length: 39.57 km</div>`)[0];
+                popup_5e534637562bbe860c3cf9a0a1dacf79.setContent(html_76ee34005052acca2bc0a903ceb74b7b);
+            
+        
+
+        poly_line_7e559549abb7d0d6b7fbeed99296d3cd.bindPopup(popup_5e534637562bbe860c3cf9a0a1dacf79)
+        ;
+
+        
+    
+    
+            var poly_line_ee676543c6a006c3498a9b6e7009c470 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.096359, 29.030929], [41.0846, 29.0268], [41.079067230224, 29.009700775146], [41.062824249267, 29.037382125854], [41.123654937744, 29.033008956909], [41.128116, 29.028461], [41.123824, 29.054382], [41.17915998, 28.89096012], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_66caeb46a7828f266464ea9e2e9bd968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8956695f4a73e7754b88f36ec47f7d1b = $(`<div id="html_8956695f4a73e7754b88f36ec47f7d1b" style="width: 100.0%; height: 100.0%;">Truck ID: 10, Length: 48.92 km</div>`)[0];
+                popup_66caeb46a7828f266464ea9e2e9bd968.setContent(html_8956695f4a73e7754b88f36ec47f7d1b);
+            
+        
+
+        poly_line_ee676543c6a006c3498a9b6e7009c470.bindPopup(popup_66caeb46a7828f266464ea9e2e9bd968)
+        ;
+
+        
+    
+    
+            var poly_line_aca69391beaf752c3694fc0ea11ff48b = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.09280014038, 29.046995162963], [41.0741096735, 29.016002509743], [41.087313, 29.007156], [41.095653, 29.001405], [41.094415755942, 28.997789053246], [41.105104, 28.995817], [41.108428955078, 29.007406234741], [41.088842, 28.984932], [41.05371996, 29.02305996], [41.13620758, 29.02454948], [41.170593261718, 29.054075241088], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_dfed05ccfb6b609abfabc8a82567dfb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfc3c7216c562f51b05aac7f8175060b = $(`<div id="html_dfc3c7216c562f51b05aac7f8175060b" style="width: 100.0%; height: 100.0%;">Truck ID: 11, Length: 39.77 km</div>`)[0];
+                popup_dfed05ccfb6b609abfabc8a82567dfb4.setContent(html_dfc3c7216c562f51b05aac7f8175060b);
+            
+        
+
+        poly_line_aca69391beaf752c3694fc0ea11ff48b.bindPopup(popup_dfed05ccfb6b609abfabc8a82567dfb4)
+        ;
+
+        
+    
+    
+            var poly_line_b571c77374050c65d677b6f73745a214 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.087313, 29.007156], [41.089344024658, 28.993865966796], [41.09992534, 28.99898089], [41.04788545, 29.02568726], [41.17882156372, 28.893251419067], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_d85c777951a0137ad86a60c982ed80c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad44bc09edbb4a78c4283548159793a5 = $(`<div id="html_ad44bc09edbb4a78c4283548159793a5" style="width: 100.0%; height: 100.0%;">Truck ID: 12, Length: 46.98 km</div>`)[0];
+                popup_d85c777951a0137ad86a60c982ed80c6.setContent(html_ad44bc09edbb4a78c4283548159793a5);
+            
+        
+
+        poly_line_b571c77374050c65d677b6f73745a214.bindPopup(popup_d85c777951a0137ad86a60c982ed80c6)
+        ;
+
+        
+    
+    
+            var poly_line_a4585af6a3e725f7312b80de09832197 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.093581, 29.041219], [41.112822121941, 29.030469842255], [41.109572104188, 29.020004682241], [41.085278, 29.004263], [41.05371996, 29.02305996], [41.114488, 29.059006], [41.167737, 29.056794], [41.179886, 28.889676], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_38c91c26fa7efd939bd8d5892db47e9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a45832a20895e0328718d0d08e4b8f6 = $(`<div id="html_1a45832a20895e0328718d0d08e4b8f6" style="width: 100.0%; height: 100.0%;">Truck ID: 13, Length: 55.17 km</div>`)[0];
+                popup_38c91c26fa7efd939bd8d5892db47e9e.setContent(html_1a45832a20895e0328718d0d08e4b8f6);
+            
+        
+
+        poly_line_a4585af6a3e725f7312b80de09832197.bindPopup(popup_38c91c26fa7efd939bd8d5892db47e9e)
+        ;
+
+        
+    
+    
+            var poly_line_63ba015b6918ec7c9b25bbe0a48de396 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.088787078857, 29.045728683471], [41.081672668457, 29.036115646362], [41.067474, 29.043103], [41.0741096735, 29.016002509743], [41.093109130859, 28.999938964843], [41.099875, 28.998432], [41.103768, 29.04739], [41.11867155, 29.0624925], [41.159837222658, 29.040959123522], [41.17299, 29.05098], [41.16860989, 29.05738396], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_6b98e028287824471c00fefa25fb6e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e6be4e9fbcfacdf07b8d12d32f6062b = $(`<div id="html_9e6be4e9fbcfacdf07b8d12d32f6062b" style="width: 100.0%; height: 100.0%;">Truck ID: 14, Length: 31.22 km</div>`)[0];
+                popup_6b98e028287824471c00fefa25fb6e6e.setContent(html_9e6be4e9fbcfacdf07b8d12d32f6062b);
+            
+        
+
+        poly_line_63ba015b6918ec7c9b25bbe0a48de396.bindPopup(popup_6b98e028287824471c00fefa25fb6e6e)
+        ;
+
+        
+    
+    
+            var poly_line_fad48b300c310e2197628e42619fbb80 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.093551635742, 29.041072845459], [41.086108, 29.033279], [41.081489562988, 29.02663230896], [41.07635102, 29.01459659], [41.07078, 29.042157], [41.115721, 29.023224], [41.11611, 28.99747], [41.11611, 28.99747], [41.102272033691, 28.986183166503], [41.084842, 28.98587], [41.155626, 29.031582], [41.163696289062, 29.027725219726], [41.179401397705, 28.992664337158], [41.246568, 29.036352], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_121757f60533ad945891c2f059a1b25d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c789f8183d6483a75d1c27efe4bb4289 = $(`<div id="html_c789f8183d6483a75d1c27efe4bb4289" style="width: 100.0%; height: 100.0%;">Truck ID: 15, Length: 56.37 km</div>`)[0];
+                popup_121757f60533ad945891c2f059a1b25d.setContent(html_c789f8183d6483a75d1c27efe4bb4289);
+            
+        
+
+        poly_line_fad48b300c310e2197628e42619fbb80.bindPopup(popup_121757f60533ad945891c2f059a1b25d)
+        ;
+
+        
+    
+    
+            var poly_line_decf09c05608714813a30130e7b428ec = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.077098, 29.043167], [41.067426, 29.043431], [41.049434661865, 29.025022506713], [41.079515581951, 29.006847040728], [41.09600530006, 29.004359459504], [41.094779, 28.996199], [41.11586492, 29.0333056], [41.158405303955, 28.913291931152], [41.179305827245, 28.886941149831], [41.246568, 29.036352], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_f9c192f74b4e4b7eaa7a04e8ae781831 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50ec5e37ddc05ec994f0888deee7772a = $(`<div id="html_50ec5e37ddc05ec994f0888deee7772a" style="width: 100.0%; height: 100.0%;">Truck ID: 16, Length: 61.59 km</div>`)[0];
+                popup_f9c192f74b4e4b7eaa7a04e8ae781831.setContent(html_50ec5e37ddc05ec994f0888deee7772a);
+            
+        
+
+        poly_line_decf09c05608714813a30130e7b428ec.bindPopup(popup_f9c192f74b4e4b7eaa7a04e8ae781831)
+        ;
+
+        
+    
+    
+            var poly_line_c82efa4fb0597ecb20f775cada93ecc5 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.130916, 29.041309], [41.16860989, 29.05738396], [41.24559, 29.03623], [41.099775, 29.002579], [41.049759, 29.022291], [41.17882156372, 28.893251419067], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_bfcef7954500e186f6789910451a1990 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f0d1c29d8f9e9f187d034469d2e64fb = $(`<div id="html_3f0d1c29d8f9e9f187d034469d2e64fb" style="width: 100.0%; height: 100.0%;">Truck ID: 17, Length: 74.55 km</div>`)[0];
+                popup_bfcef7954500e186f6789910451a1990.setContent(html_3f0d1c29d8f9e9f187d034469d2e64fb);
+            
+        
+
+        poly_line_c82efa4fb0597ecb20f775cada93ecc5.bindPopup(popup_bfcef7954500e186f6789910451a1990)
+        ;
+
+        
+    
+    
+            var poly_line_de46dff2ae9e4a1d9d31d7984acf78d2 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.092700958252, 29.042360305786], [41.068195343017, 29.025311787923], [41.08080393, 28.99946677], [41.090757, 29.000812], [41.089303214103, 28.993721231818], [41.08308, 28.988942], [41.087452, 28.985999], [41.099807373248, 28.984425282106], [41.102272033691, 28.986183166503], [41.118016, 29.003225], [41.130638122558, 29.030752182006], [41.127426, 29.038111], [41.140623, 29.02956], [41.181575, 29.074113], [41.24559, 29.03623], [41.23722996, 28.98444996], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_0419df84ef3e405c00e64bef25cfa5c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b7e83c83efad54803fc105a13c6cf1b = $(`<div id="html_2b7e83c83efad54803fc105a13c6cf1b" style="width: 100.0%; height: 100.0%;">Truck ID: 18, Length: 53.93 km</div>`)[0];
+                popup_0419df84ef3e405c00e64bef25cfa5c0.setContent(html_2b7e83c83efad54803fc105a13c6cf1b);
+            
+        
+
+        poly_line_de46dff2ae9e4a1d9d31d7984acf78d2.bindPopup(popup_0419df84ef3e405c00e64bef25cfa5c0)
+        ;
+
+        
+    
+    
+            var poly_line_242d228d2da3e133e4925f81354b03dc = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.084806, 29.034843], [41.072421, 29.027418], [41.063967, 29.019023], [41.067174, 29.042527], [41.0805381, 29.00137473], [41.087986, 28.990707], [41.116179, 28.998003], [41.129974365234, 29.04210281372], [41.141722, 29.048882], [41.167668, 29.057163], [41.16860989, 29.05738396], [41.189279537648, 29.048419855535], [41.114488, 29.059006], [41.161334991455, 28.92211151123], [41.169336, 28.905131], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_561664888c99928cf98ac2eefdcaf9bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_090e4630ee9cb0bdface6937f4007882 = $(`<div id="html_090e4630ee9cb0bdface6937f4007882" style="width: 100.0%; height: 100.0%;">Truck ID: 19, Length: 62.82 km</div>`)[0];
+                popup_561664888c99928cf98ac2eefdcaf9bb.setContent(html_090e4630ee9cb0bdface6937f4007882);
+            
+        
+
+        poly_line_242d228d2da3e133e4925f81354b03dc.bindPopup(popup_561664888c99928cf98ac2eefdcaf9bb)
+        ;
+
+        
+    
+    
+            var poly_line_850a90cbc2f6351210d4cf204b667235 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.077204, 29.043289], [41.077776, 29.027828], [41.075825239532, 29.015085026622], [41.078735, 29.003738], [41.089344024658, 28.993865966796], [41.090559870936, 28.990559242666], [41.093901, 29.000327], [41.09254074, 29.03287506], [41.104641258717, 29.040579004213], [41.04802396, 29.02423947], [41.16835, 29.056262], [41.193016052246, 29.049463272094], [41.169336, 28.905131], [41.18632316, 28.88588721], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_18b74edcf9abfb5000572d10087939f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90d32ed09acfca7bf2bee5313affa76f = $(`<div id="html_90d32ed09acfca7bf2bee5313affa76f" style="width: 100.0%; height: 100.0%;">Truck ID: 20, Length: 66.93 km</div>`)[0];
+                popup_18b74edcf9abfb5000572d10087939f9.setContent(html_90d32ed09acfca7bf2bee5313affa76f);
+            
+        
+
+        poly_line_850a90cbc2f6351210d4cf204b667235.bindPopup(popup_18b74edcf9abfb5000572d10087939f9)
+        ;
+
+        
+    
+    
+            var poly_line_cce841abd30db32058b2f1a37fe429b2 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.086727142334, 29.049655914306], [41.110546, 29.040439], [41.129299163818, 29.043088912963], [41.12889, 29.045189], [41.160859, 29.027138], [41.168332952075, 29.028349891305], [41.1688, 29.0265], [41.088722229003, 28.992149353027], [41.081298828125, 28.988372802734], [41.063967, 29.019023], [41.183459, 28.887588], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_f9bd54d3fe8eb849c6f552fcb09a3642 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7c91da6743808818c6bb292d6a0311b = $(`<div id="html_b7c91da6743808818c6bb292d6a0311b" style="width: 100.0%; height: 100.0%;">Truck ID: 21, Length: 58.06 km</div>`)[0];
+                popup_f9bd54d3fe8eb849c6f552fcb09a3642.setContent(html_b7c91da6743808818c6bb292d6a0311b);
+            
+        
+
+        poly_line_cce841abd30db32058b2f1a37fe429b2.bindPopup(popup_f9bd54d3fe8eb849c6f552fcb09a3642)
+        ;
+
+        
+    
+    
+            var poly_line_6ac87d9b552a585e221091fc5a711310 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.116136, 29.051201], [41.129974365234, 29.04210281372], [41.168918609619, 29.057552337646], [41.1913, 29.0459], [41.094666, 28.994708], [41.095850486308, 28.992526140064], [41.09092, 28.997112], [41.09091, 28.997398], [41.09158602, 28.99883948], [41.079539, 29.006841], [41.075450897216, 29.01929283142], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_b7e81bf91922a0617a2796d9c9fa99b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af294e1f0852298c403537e81787b23 = $(`<div id="html_7af294e1f0852298c403537e81787b23" style="width: 100.0%; height: 100.0%;">Truck ID: 22, Length: 30.17 km</div>`)[0];
+                popup_b7e81bf91922a0617a2796d9c9fa99b3.setContent(html_7af294e1f0852298c403537e81787b23);
+            
+        
+
+        poly_line_6ac87d9b552a585e221091fc5a711310.bindPopup(popup_b7e81bf91922a0617a2796d9c9fa99b3)
+        ;
+
+        
+    
+    
+            var poly_line_651d06b732860580df9b243fdb01759b = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.08538, 29.046307], [41.085487604141, 29.038115143775], [41.088388, 29.03247], [41.095458984375, 29.038883209228], [41.093551635742, 29.041072845459], [41.103768, 29.04739], [41.11788, 29.019418], [41.09092, 28.997112], [41.102272033691, 28.986183166503], [41.071397, 29.028109], [41.048423767089, 29.02603149414], [41.15615004, 29.03559012], [41.178549632711, 28.893016984097], [41.183716552332, 28.886586176232], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_aa19d0a9638daf57dc24ea776499639f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3df52ae025d4fbb24241bd403f77e30d = $(`<div id="html_3df52ae025d4fbb24241bd403f77e30d" style="width: 100.0%; height: 100.0%;">Truck ID: 23, Length: 61.90 km</div>`)[0];
+                popup_aa19d0a9638daf57dc24ea776499639f.setContent(html_3df52ae025d4fbb24241bd403f77e30d);
+            
+        
+
+        poly_line_651d06b732860580df9b243fdb01759b.bindPopup(popup_aa19d0a9638daf57dc24ea776499639f)
+        ;
+
+        
+    
+    
+            var poly_line_70a84e6c7db91f9547cef97a12ec8242 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.101426, 29.037415], [41.127426, 29.038111], [41.140623, 29.02956], [41.166488966226, 28.989879111079], [41.09585571289, 28.990776062011], [41.08451, 28.998014], [41.087757, 29.004472], [41.05371996, 29.02305996], [41.246568, 29.036352], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_e2809719ecb18a1b0154bd41e0bcec0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e2da03f128b96523c36131f73722344 = $(`<div id="html_6e2da03f128b96523c36131f73722344" style="width: 100.0%; height: 100.0%;">Truck ID: 24, Length: 63.65 km</div>`)[0];
+                popup_e2809719ecb18a1b0154bd41e0bcec0d.setContent(html_6e2da03f128b96523c36131f73722344);
+            
+        
+
+        poly_line_70a84e6c7db91f9547cef97a12ec8242.bindPopup(popup_e2809719ecb18a1b0154bd41e0bcec0d)
+        ;
+
+        
+    
+    
+            var poly_line_b3a5c8b92ea84eec56d891c664cb005a = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.103292, 29.042091], [41.11444, 29.05212], [41.120008, 29.057272], [41.169301, 29.057916], [41.169166564941, 28.990755081176], [41.096904, 28.999564], [41.095428466796, 29.001247406005], [41.097245, 29.0037], [41.089753238484, 29.001419926062], [41.082793660462, 29.003989147022], [41.082549, 28.99776], [41.05371996, 29.02305996], [41.179445, 28.893528], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_763dc23e8f6eaa1db7d644793d60f55a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_586ecd9435373087f4128993f932e2fb = $(`<div id="html_586ecd9435373087f4128993f932e2fb" style="width: 100.0%; height: 100.0%;">Truck ID: 25, Length: 63.86 km</div>`)[0];
+                popup_763dc23e8f6eaa1db7d644793d60f55a.setContent(html_586ecd9435373087f4128993f932e2fb);
+            
+        
+
+        poly_line_b3a5c8b92ea84eec56d891c664cb005a.bindPopup(popup_763dc23e8f6eaa1db7d644793d60f55a)
+        ;
+
+        
+    
+    
+            var poly_line_fbf0b676f1d603ed98279403b2114d66 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.08768, 29.050411], [41.088230133056, 29.0562210083], [41.06414, 29.03721], [41.086082458496, 29.002363204956], [41.090746, 28.999802], [41.097898520529, 28.996733352542], [41.094375610351, 28.992877960205], [41.09191, 28.98918], [41.0814, 28.9877], [41.159438, 28.912897], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_f84060752e67a900e04e450f3832ebd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_525ceeba60cc997f377a3fc8102a248e = $(`<div id="html_525ceeba60cc997f377a3fc8102a248e" style="width: 100.0%; height: 100.0%;">Truck ID: 26, Length: 35.67 km</div>`)[0];
+                popup_f84060752e67a900e04e450f3832ebd6.setContent(html_525ceeba60cc997f377a3fc8102a248e);
+            
+        
+
+        poly_line_fbf0b676f1d603ed98279403b2114d66.bindPopup(popup_f84060752e67a900e04e450f3832ebd6)
+        ;
+
+        
+    
+    
+            var poly_line_6d4558c4cd89ab6b51d32c8a4768d9de = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.118495941162, 29.063430786132], [41.144259, 29.04437], [41.120469, 29.00077], [41.090746, 28.999802], [41.0862, 28.99262], [41.065096, 29.028439], [41.0508737975, 29.024917525], [41.179445, 28.893528], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_4cc55d541fc1fd186dba1fe3d73f2840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fd738d4947a7529e7bb5285ee0de270 = $(`<div id="html_7fd738d4947a7529e7bb5285ee0de270" style="width: 100.0%; height: 100.0%;">Truck ID: 27, Length: 55.30 km</div>`)[0];
+                popup_4cc55d541fc1fd186dba1fe3d73f2840.setContent(html_7fd738d4947a7529e7bb5285ee0de270);
+            
+        
+
+        poly_line_6d4558c4cd89ab6b51d32c8a4768d9de.bindPopup(popup_4cc55d541fc1fd186dba1fe3d73f2840)
+        ;
+
+        
+    
+    
+            var poly_line_55b243e1e10550dbd71312a213ec7698 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.071315, 29.02975], [41.075450897216, 29.01929283142], [41.083002, 29.002619], [41.093139, 28.99974], [41.094878, 28.99909], [41.094470977783, 29.004402160644], [41.088195, 28.992427], [41.098403135814, 28.980686483636], [41.14682001, 29.03555016], [41.21433999, 29.10849984], [41.246653, 29.036461], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_34ce314446d49a195c76666971ea43d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be8ccdf08d8bb56a3fd73d2e813915b3 = $(`<div id="html_be8ccdf08d8bb56a3fd73d2e813915b3" style="width: 100.0%; height: 100.0%;">Truck ID: 28, Length: 51.07 km</div>`)[0];
+                popup_34ce314446d49a195c76666971ea43d8.setContent(html_be8ccdf08d8bb56a3fd73d2e813915b3);
+            
+        
+
+        poly_line_55b243e1e10550dbd71312a213ec7698.bindPopup(popup_34ce314446d49a195c76666971ea43d8)
+        ;
+
+        
+    
+    
+            var poly_line_6bdb0a4be68f8f1ba30e06d96ed75224 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.113177, 29.054141], [41.171748, 29.052967], [41.182338, 29.073421], [41.099708557128, 28.992643356323], [41.056659, 29.029773], [41.05075073, 29.02487183], [41.049091339111, 29.025901794433], [41.179886, 28.889676], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_9ca0402b346893da712a46725efba25c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8ec7dbd9471b11972c4722e18942cc7 = $(`<div id="html_a8ec7dbd9471b11972c4722e18942cc7" style="width: 100.0%; height: 100.0%;">Truck ID: 29, Length: 64.66 km</div>`)[0];
+                popup_9ca0402b346893da712a46725efba25c.setContent(html_a8ec7dbd9471b11972c4722e18942cc7);
+            
+        
+
+        poly_line_6bdb0a4be68f8f1ba30e06d96ed75224.bindPopup(popup_9ca0402b346893da712a46725efba25c)
+        ;
+
+        
+    
+    
+            var poly_line_43a13bd37e5a1573a6a2a9fcf986b9c0 = L.polyline(
+                [[41.08919085025256, 29.04999926199514], [41.096165, 29.0443], [41.06008998, 29.03637996], [41.047951, 29.025625], [41.088722229003, 28.992149353027], [41.094299316406, 28.99987411499], [41.184765, 29.042327], [41.209039874375, 29.027086067945], [41.183689062781, 28.886999848764], [41.08919085025256, 29.04999926199514]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+        var popup_f26eee3e1d349526b3c3d4c0f4abc692 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28ad5b7a6b9abcd6f6745812ec7472b6 = $(`<div id="html_28ad5b7a6b9abcd6f6745812ec7472b6" style="width: 100.0%; height: 100.0%;">Truck ID: 30, Length: 55.76 km</div>`)[0];
+                popup_f26eee3e1d349526b3c3d4c0f4abc692.setContent(html_28ad5b7a6b9abcd6f6745812ec7472b6);
+            
+        
+
+        poly_line_43a13bd37e5a1573a6a2a9fcf986b9c0.bindPopup(popup_f26eee3e1d349526b3c3d4c0f4abc692)
+        ;
+
+        
+    
+    
+            var marker_b7f8cfa372f87d053cffa40855067bf7 = L.marker(
+                [41.08919085025256, 29.04999926199514],
+                {}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+            var icon_fa84b1ea17bf60f2c2e5764be4bcc841 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b7f8cfa372f87d053cffa40855067bf7.setIcon(icon_fa84b1ea17bf60f2c2e5764be4bcc841);
+        
+    
+        var popup_3531e9a9748dc3a9509eb2bca181306b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02b075d16218a7386d142b4140a67eb9 = $(`<div id="html_02b075d16218a7386d142b4140a67eb9" style="width: 100.0%; height: 100.0%;">Total Route Length for Day 5: 1597.25 km Total Length for the Week: 6424.15 km</div>`)[0];
+                popup_3531e9a9748dc3a9509eb2bca181306b.setContent(html_02b075d16218a7386d142b4140a67eb9);
+            
+        
+
+        marker_b7f8cfa372f87d053cffa40855067bf7.bindPopup(popup_3531e9a9748dc3a9509eb2bca181306b)
+        ;
+
+        
+    
+    
+            tile_layer_7d6ed41a63b0757ba8fb7cfc8152aeb1.addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+            var marker_4bd30962ca39b34db230ecdea136e7f4 = L.marker(
+                [41.08919085025256, 29.04999926199514],
+                {}
+            ).addTo(map_09bf6a735c25dce92ee4556b4feacf13);
+        
+    
+            var icon_5c6b3137a474b27269a49103d155e3d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bd30962ca39b34db230ecdea136e7f4.setIcon(icon_5c6b3137a474b27269a49103d155e3d1);
+        
+    
+        var popup_6aa1ac215a06edf0c64b381d39449772 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0232ba190467e2478d8fef288e3342a = $(`<div id="html_a0232ba190467e2478d8fef288e3342a" style="width: 100.0%; height: 100.0%;">Total Distance for the Week: 6424.15 km</div>`)[0];
+                popup_6aa1ac215a06edf0c64b381d39449772.setContent(html_a0232ba190467e2478d8fef288e3342a);
+            
+        
+
+        marker_4bd30962ca39b34db230ecdea136e7f4.bindPopup(popup_6aa1ac215a06edf0c64b381d39449772)
+        ;
+
+        
+    
+</script>
+</html>
