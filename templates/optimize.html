@@ -101,7 +101,7 @@
             </select>
         </div>
     
-        <a href="{% static 'generated_maps/map_day_' %}{{ selected_day }}.html" id="submit">Upload and Optimize</a>
+        <input type="submit" value="Upload and Optimize" id="submit">
     </form>
     <div class="info">
         <p>Data File Name = "Data_Last.xlsx"</p>
@@ -114,5 +114,15 @@
         </div>
     </div>
 </div>
+
+
+{% if map_html_file and selected_day is not none %}
+<style>
+    .input {
+        display: none;
+    }
+</style>
+<iframe src="{% static 'generated_maps/map_day_' %}{{ selected_day }}.html" width="100%" height="600"></iframe>
+{% endif %}
 
 {% endblock body %}
